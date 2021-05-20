@@ -1,0 +1,764 @@
+*{
+	box-sizing: border-box;
+
+}
+body{
+	font-family: 'Lato', sans-sersif;
+    font-weight: normal;
+    font-style: normal;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*loader image*/
+#loader{
+    background: url(../img/loader.gif) no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+}
+#whatsupLink a p{
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    z-index: 88888;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+#whatsupLink a img{
+    width: 60px;
+    position: fixed;
+    z-index: 10000;
+    left: 15px;
+    bottom: 15px;
+}
+#enquiry-btn{
+    position: fixed;
+    z-index: 77777;
+    right: -36px;
+    top: 50%;
+    transform: rotateZ(90deg);
+}
+#enquiry-btn .btn{
+    background: #2d2424;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 12px;
+    border: 1px solid silver;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#enquiry-btn .btn:hover{
+    color: #ffffff;
+    border-color: #a07936;
+    background: #a07936;
+}
+#gouparrow{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    transform: rotate(-90deg);
+    background: #2d2424;
+    z-index: 66666;
+}
+#gouparrow a{
+    color: #fff;
+}
+#gouparrow a:hover{
+    color: #ffffff;
+    border-color: #a07936;
+    background: #a07936;
+}
+/******************header section*****************/
+/*navigation*/
+header{
+    background: #942f2f00;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    padding: 0 30px;
+    transition: all 0.8s;
+}
+header .header-nav .right-nav p a{
+    text-decoration: none;
+    color: #202020;
+    padding: 10px;
+
+}
+header .header-nav{
+    padding: 2px 0;
+}
+header .header-nav .left-nav{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+header .navbar .navbar-brand img{
+    width: 120px;
+}
+header .header-nav .left-nav i{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+header .header-nav .left-nav span{
+    line-height: 1;
+}
+header .header-nav .right-nav p,
+header .header-nav .left-nav a{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    color: #444141;
+}
+header .line-between{
+    border-bottom: 1px solid silver;
+    width: 100%;
+}
+header .navbar .dropdown .dropdown-menu{
+    width: 200px;
+    text-align: center;
+}
+header .navbar .dropdown .dropdown-menu a{
+    font-size: 18px;
+    font-weight: 500;
+}
+header .navbar .dropdown .dropdown-menu a:hover{
+    color: #16181b;
+    text-decoration: none;
+    background-color: #cfdeec;
+}
+header .navbar .collapse{
+    text-transform: capitalize;
+    justify-content: flex-end;
+}
+header .navbar .collapse.show{
+    padding: 0;
+    background: #ffffff6e;
+}
+header .navbar .collapse.show,
+header .navbar .collapse .navbar-nav .nav-link,
+header .navbar .collapse .navbar-nav
+.nav-link .dropdown-menu.dropdown-item{
+    color: #202020;
+    padding: 5px 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*toggler*/
+header .navbar .bar1,
+header .navbar .bar2,
+header .navbar .bar3{
+	width: 20px;
+	height: 2px;
+	background-color: #333;
+	margin: 5px 0;
+	transition: 0.4s
+}
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-6px, 3px);
+  transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -4px);
+  transform: rotate(45deg) translate(-7px, -4px);
+}
+
+/*toggler*/
+header .navbar .collapse .navbar-nav .nav-link:hover{
+    color: #a07936;
+}
+header .navbar .collapse .navbar-nav .nav-link,
+header .navbar .navbar-brand{
+    color: #202020;
+}
+/*navigation*/
+
+/*silder */
+.carousel .carousel-inner .carousel-item .banner{
+    height: 100%;
+}
+.carousel .carousel-inner .carousel-item
+.carousel-caption{
+    color: #202020;
+    top: 30%;
+}
+.carousel .carousel-inner .carousel-item
+.slider-text-3{
+    color: #202020;
+    top: 35%;
+    width: 100%;
+}
+.carousel .carousel-inner .carousel-item
+.slider-text-2{
+    color: #202020;
+    top: 20%;;
+}
+.carousel .carousel-inner .carousel-item
+.carousel-caption h5{
+    font-size: 45px;
+    line-height: 45px;
+}
+.carousel .carousel-inner .carousel-item
+.carousel-caption .text-2{
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.carousel .carousel-inner .carousel-item
+.carousel-caption img{
+    width: 600px;
+    margin: auto;
+}
+.carousel .carousel-inner .carousel-item
+.carousel-caption .img-2{
+    width: 100%;
+    margin: auto;
+}
+.carousel .carousel-inner .carousel-item
+.carousel-caption p{
+    font-size: 18px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    margin: 21px 0;
+    padding: 5px 0;
+}
+.carousel .carousel-inner .carousel-item
+.carousel-caption button{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid #362f2d;
+    border-radius: 3px;
+    padding: 0 35px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #362f2d;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    transition: all 0.2s linear;
+    outline: none;
+}
+.carousel .carousel-inner
+.carousel-item .carousel-caption button:hover{
+    color: #ffffff;
+    border-color: #a07936;
+    background: #a07936;
+}
+/******************header section*****************/
+.collection{
+    display: flex;
+    justify-content: space-around;
+    background: #2d2424;
+    padding: 5px 0;
+    position: sticky;
+    top: 62px;
+    z-index: 1111;
+    padding: 0;
+}
+.collection .content{
+    width: 25%;
+    text-align: center;
+}
+.collection .content button{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 14px;
+    transition: 0.3s;
+}
+
+.collection .content button:hover{
+    background: #e8e8e8;
+    color: #000;
+}
+
+.actives{
+    background: #e8e8e8;
+    color: #000;
+}
+
+.bottomsilde{
+    position: fixed;
+    z-index: 111111;
+    background: #efecec;
+    width: 100%;
+    bottom: 0;
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.6s;
+}
+
+.bottomsilde .btn{
+    width: 100%;
+    background: transparent;
+    color: #000;
+    border: none;
+    font-size: 15px;
+    border-bottom: 1px solid silver;
+    font-weight: 800;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+/*******************New Products***************/
+.newProduct .content {
+    width: 23%;
+    float: left;
+    text-align: center;
+    border: 1px solid #ececec;
+    margin: 8px 5px;
+    background: #ffffff;
+    transform: translateY(0px);
+}
+.newProduct .content:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 5px 30px 1px #ccc;
+}
+.newProduct{
+  display: block;
+}
+.newProduct .content p{
+    margin: 0;
+}
+.newProduct .content .image{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newProduct .content .image img{
+    width: 140px;
+}
+.newProduct .content .image img:hover{
+    width: 250px;
+}
+.newProduct .content .low-width-hover img:hover{
+    width: 150px;
+}
+.newProduct .content button{
+    text-transform: capitalize;
+    background: #2d2424;
+    border: 1px solid #2d2424;
+    letter-spacing: 1px;
+    margin: 10px auto;
+    font-size: 12px;
+}
+.newProduct .content button:hover{
+    color: #ffffff;
+    border-color: #a07936;
+    background: #a07936;
+}
+
+/*******************All Products**************/
+
+/*********************main*****************/
+.heading-title {
+    text-align: center;
+    line-height: 10px;
+    padding: 25px 26px;
+    clear: both;
+}
+.heading-title h4{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Belleza', sans-serif;
+    display: block;
+}
+main .collection-link{
+    margin: 15px auto;
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+}
+main .collection-link .bg-color{
+    background: #4e4e4a;
+}
+main .collection-link .btns{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0;
+    border-radius: 0px;
+}
+main .collection-link .btns a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+main .collection-link .btns a:hover{
+    background: #bdbab3;
+    color: black;
+}
+main .headers{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+    background: #d8d8d8;
+    color: black;
+    margin: 35px auto;
+    clear: both;
+    text-align: center;
+}
+main .headers p{
+    margin: 0;
+}
+main .new-product .text-deco{
+    text-decoration: none;
+    color: #202020;
+}
+main .new-product .hover-effect{
+    transition:all 0.3s linear;
+    height: 400px;
+    transform: translateY(5px);
+}
+main .new-product .hover-effect:hover{
+    transform: translateY(0px);
+    -moz-box-shadow:    1px 1px 30px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 30px 1px #ccc;
+    box-shadow:         1px 1px 30px 1px #ccc;
+}
+main .new-product .content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*******************All Products**************/
+
+ /*footer*/
+
+/*************Contact Us*************/
+
+  footer .contact-us form{
+    width: auto;
+    height: 100%;
+    margin: auto;
+  }
+
+ footer .contact-us form h5{
+    text-align: left;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 35px;
+ }
+
+  footer .contact-us form label{
+    margin: 0;
+  }
+  footer .contact-us form input{
+    width: 100%;
+    padding: .375rem .75rem;
+    outline: none;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    color: black;
+  }
+  footer .contact-us form textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid silver;
+  }
+  footer .contact-us form button{
+    margin: 22px 0;
+    padding: 11px 18px;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+  }
+   footer .contact-us form button:hover{
+    background: #b3aaaa;
+    color: #fff;
+   }
+
+/*End of Contact */
+
+   footer .bottom-border {
+    border-bottom: 1px solid silver;
+   }
+   footer .bg-dark .style h6{
+		 font-size: 11px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     font-weight: 700;
+   }
+    footer .bg-dark .style p{
+    font-size: 15px;
+    }
+   footer .bg-dark .style a{
+     text-decoration: none;
+    color: #ff2222;
+    letter-spacing: 2px;
+   }
+   footer .bg-dark .style{
+    padding: 19px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 16px;
+   }
+
+   footer .bg-dark .img{
+    display: flex;
+   }
+
+   footer .bg-dark .img img{
+    width: 200px;
+    margin: auto;
+   }
+
+   footer .footer img{
+    width: 100px;
+   }
+   footer .footer span{
+    font-size: 1rem;
+    color: #fff;
+   }
+
+   footer .footer .center{
+    display: flex;
+    align-items: center;
+   }
+   footer .footer .pl p{
+    padding-left: 25px;
+    color: #727272;
+   }
+   footer .footer p{
+    color: #727272;
+   }
+
+    footer .social{
+    padding-left: 0;
+   }
+    footer .footer-icons{
+    display: flex;
+    justify-content: space-around;
+    }
+    footer .footer-icons i{
+    background: #e85e5e;
+    padding: 8px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all 0.6s linear;
+     }
+    footer .footer-icons i:hover{
+      transform: rotateY(180deg);
+     }
+
+    .last-footer p{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    }
+
+   /*************** Modal ************/
+   #enquiry_now{
+    z-index: 88888;
+   }
+   .modal .modal-body form{
+    text-align: center;
+   }
+    .modal .modal-body{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    }
+   .modal .modal-dialog .modal-content{
+    width: auto;
+    margin: auto;
+   }
+   .modal .modal-body form button{
+    background: #362f2d;
+    border: 1px solid #362f2d;
+    text-transform: uppercase;
+		color: #ffffff;
+   }
+   .modal .modal-body form button:hover{
+    color: #ffffff;
+    border-color: #a07936;
+    background: #a07936;
+    }
+    /*************** Modal ************/
+
+    /******************poppup onclick enquiry btn- modal*****************/
+
+
+#enquiryModal {
+    z-index: 111111;
+}
+.modal .modal-contents .modal-body .enquiry-form{
+    margin: 0;
+    text-align: left;
+}
+
+.modal .modal-contents .modal-body .enquiry-form input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid silver;
+    outline: none;
+    font-size: 17px;
+}
+.modal .modal-body form p{
+    font-size: 13px;
+    margin: 0;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+.modal .modal-contents .modal-body .enquiry-form select{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid silver;
+    font-size: 17px;
+}
+.modal .modal-contents .modal-body .enquiry-form .from-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.modal .modal-contents
+.modal-body .enquiry-form .from-btn button{
+    background: #362f2d;
+    border: 1px solid #362f2d;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 9px 25px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+.modal .modal-contents
+.modal-body .enquiry-form .from-btn .btn:hover{
+    color: #ffffff;
+    border-color: #a07936;
+    background: #a07936;
+}
+
+/******************poppup - modal*****************/
+
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 576px) {
+    header .header-nav{padding: 0;}
+    header .header-nav .right-nav p {display: none;}
+    header .navbar .collapse.show, header .navbar .collapse .navbar-nav .nav-link,
+    header .navbar .collapse .navbar-nav .nav-link
+     .dropdown-menu.dropdown-item{padding: 5px 3px;}
+     header{padding: 2px 20px;}
+     header .navbar .navbar-brand img{ width: 80px;}
+     #whatsupLink a img{width: 45px;left: 4px;bottom: 8px;}
+     #whatsupLink a p{display: none;}
+     #enquiry-btn{top: 50%;right: -36px; display: block;}
+     #enquiry-btn .btn{padding: 4px 9px;}
+     header .header-nav .left-nav{display: none;}
+     .newProduct .content{display: inline-block;width: 46%;float: left;margin: 5px 5px;}
+    .newProduct .content .image{width: 100%;height: 130px;display: flex;justify-content: center;align-items: center;}
+   .newProduct .content .image img{width: 110px;}
+   .newProduct .content .text button{padding: 4px 5px;margin: 7px auto;text-transform: capitalize;background: #2d2424;border: 1px solid #2d2424;letter-spacing: 1px;font-size: 7px;}
+    .newProduct .content .image img:hover{width: 140px;}
+    .collection .item .btns .btn{width: 50%;}
+   .collection .content{width: 50%;}
+   .collection { top: 0px;}
+   .heading-title{line-height: 0;padding: 15px 26px; line-height: 0px;}
+     .heading-title img{width: 100px;}
+     .heading-title h4{font-size: 15px;}
+     footer .contact-us form h5{padding-bottom: 10px; font-size: 24px;}
+     .newProduct .sub-text p{font-size: 12px;}
+     footer .contact-us form button{ margin: 15px 0;font-size: 12px;}
+     footer .bg-dark .style{padding: 2px;}
+      .last-footer p{text-align: center;padding: 4px;font-size: 1.1rem;text-transform: capitalize;font-size: 12px;margin: 0;padding: 10px 0;}
+      #about-us .container{padding: 20px;}
+      footer .bg-dark .style h6{font-size: 10px; font-weight: 600;}
+      footer .bg-dark .style p{font-size: 12px;}
+      footer .bg-dark .img img{display: none;}
+      .modal .modal-contents .modal-body .enquiry-form .from-btn button{padding: 4px 10px;}
+      .modal .modal-body{padding: 5px 17px;}
+      .modal .modal-body form p{margin: 0;font-size: 11px;text-transform: lowercase;}
+			header .line-between{display: none;}
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) {
+    header .header-nav{padding: 0;}
+    header .header-nav .right-nav p {display: none;}
+    header .navbar .collapse.show, header .navbar .collapse .navbar-nav .nav-link,
+    header .navbar .collapse .navbar-nav .nav-link
+     .dropdown-menu.dropdown-item{padding: 5px 3px;}
+     header{padding: 2px 20px;}
+     header .navbar .navbar-brand img{ width: 80px;}
+     #whatsupLink a img{width: 45px;left: 4px;bottom: 8px;}
+     #whatsupLink a p{display: none;}
+     #enquiry-btn{top: 50%;right: -36px;}
+     #enquiry-btn .btn{padding: 4px 9px; display: block;}
+     header .header-nav .left-nav{display: none;}
+     .newProduct .content{display: inline-block;width: 46%;float: left;margin: 5px 5px;}
+    .newProduct .content .image{width: 100%;height: 130px;display: flex;justify-content: center;align-items: center;}
+    .newProduct .content .image img{width: 110px;}
+    .newProduct .content .text button{padding: 4px 5px;margin: 7px auto;text-transform: capitalize;background: #2d2424;border: 1px solid #2d2424;letter-spacing: 1px;font-size: 7px;}
+    .newProduct .content .image img:hover{width: 140px;}
+    .collection .item .btns .btn{width: 50%;}
+    .collection .content{width: 50%;}
+    .collection { top: 0px;}
+    .heading-title{line-height: 0;padding: 15px 26px; line-height: 0px;}
+     .heading-title img{width: 100px;}
+     .heading-title h4{font-size: 15px;}
+     footer .contact-us form h5{padding-bottom: 10px; font-size: 24px;}
+     .newProduct .sub-text p{font-size: 12px; padding: 0px;}
+     footer .contact-us form button{ margin: 15px 0;font-size: 12px;}
+     main .headers p{font-size: 18px;}
+     .last-footer p{text-align: center;padding: 4px;font-size: 1.1rem;text-transform: capitalize;font-size: 12px;margin: 0;padding: 10px 0;}
+      #about-us .container{padding: 20px;}
+      footer .bg-dark .style h6{font-size: 10px; font-weight: 600;}
+      footer .bg-dark .style p{font-size: 12px;}
+      footer .bg-dark .img img{display: none;}
+      footer .bg-dark .style{padding: 2px;}
+      .last-footer p{text-align: center;padding: 4px;font-size: 1.1rem;text-transform: capitalize;font-size: 12px;margin: 0;padding: 10px 0;}
+      #about-us .container{padding: 20px;}
+      footer .bg-dark .style p{font-size: 12px;}
+      footer .bg-dark .img img{display: none;}
+      .modal .modal-contents .modal-body .enquiry-form .from-btn button{padding: 4px 10px;}
+      .modal .modal-body{padding: 5px 17px;}
+      .modal .modal-body form p{margin: 0;font-size: 11px;text-transform: lowercase;}
+
+
+ }
+ /*************************END*******************************/
